@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HelloWebClient",
+      "request": "launch",
+      "mainClass": "com.example.springreactordemo.HelloWebClient",
+      "projectName": "springreactordemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GreetingHandlerTest",
+      "request": "launch",
+      "mainClass": "com.example.springreactordemo.GreetingHandlerTest",
+      "projectName": "springreactordemo"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoApplication",
+      "request": "launch",
+      "mainClass": "com.example.springreactordemo.DemoApplication",
+      "projectName": "springreactordemo"
+    }
+  ]
+}
