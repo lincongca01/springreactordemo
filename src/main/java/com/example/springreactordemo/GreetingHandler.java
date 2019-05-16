@@ -1,6 +1,6 @@
 package com.example.springreactordemo;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 @Component
 public class GreetingHandler {
   private static final String RESPONSE_STRING_FORMAT = "Hello from '%s': %d";
-  private AtomicInteger incrementer = new AtomicInteger (0);
+  private AtomicLong incrementer = new AtomicLong(0);
 
   public Mono<ServerResponse> hello(ServerRequest request) {
     return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)

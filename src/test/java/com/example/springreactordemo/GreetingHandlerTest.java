@@ -51,7 +51,7 @@ public class GreetingHandlerTest {
 
   @Test
   public void helloworld_concurrent() throws Exception {
-    final int numOfReqests = 10000;
+    final int numOfReqests = 100;
 
     Set<String> result = Flux.range(1, numOfReqests)
       .parallel()
