@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 @Component
 public class GreetingHandler {
   private static final String RESPONSE_STRING_FORMAT = "Hello from '%s': %d";
-  private AtomicLong incrementer = new AtomicLong(0);
+  private final AtomicLong incrementer = new AtomicLong(0);
 
   public Mono<ServerResponse> hello(ServerRequest request) {
     return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
